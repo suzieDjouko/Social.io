@@ -1,0 +1,355 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background: #f1f1f1;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0,0,0,0.6);
+    font-family: Roboto,sans-serif;
+    margin: 0px;
+}
+
+.header a{
+    text-decoration: none ;
+}
+
+a{
+    color:inherit;
+    
+}
+.header{
+    background:#2C3E50;
+    color: #ffff;
+    
+}
+.logoh{
+    display: block;
+    text-align: center;
+    padding: 11px 0 ;
+    font-size: 24px ;  
+}
+.headerNav{
+    text-align: center;
+    padding-bottom: 16px;
+    line-height: 2;
+}
+ .headerNav a {
+    color: rgba(255, 255, 255, 0.67);
+    font-style: normal;
+    display: inline-block;
+    margin:  0px 12px;
+    transition: color .3s;
+}
+ .headerNav a:hover,.headerNav a.active {
+   color: white;
+ }
+
+ .container {
+    padding: 0 15px;
+    max-width: 1080px;
+    margin-left:auto;
+    margin-right: auto;
+ }
+ .site{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .siedbar{
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+ }
+.main {
+    margin-bottom: 20px;
+}
+.profil {
+    display: none;
+}
+ 
+ .siedbar a {
+    display: block;
+    text-decoration: none;
+    padding: 0.6em  0;
+    padding-left: 10px ;
+    transition: .3s;
+    border: solid 1px transparent;
+    width: 50%;
+ }
+ 
+ 
+ .siedbar a:hover,
+  .siedbar  a.active {
+    color: #000;
+    border: solid 1px #decbde;
+    background: #fff;
+    border-radius: 3px;
+    font-weight:bold ;
+ }
+ .siedbar a::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 20px;
+    opacity: .67;
+    background:url(images/imgHome.svg) center center / cover no-repeat;
+    transform: opacity .3s;
+    
+    
+ }
+.siedbar .siedbarMess::before{
+    background-image:url(images/imgmessage.svg);
+}
+.siedbar .siedbarMess::before{
+    background-image:url(images/imgmessage.svg);
+}
+.siedbar .siedbarEvent::before{
+    background-image:url(images/imgEvent.svg);
+}
+.siedbar .siedbarAmis::before{
+    background-image:url(images/imgGrp.svg);
+}
+.siedbar .siedbarGroup::before{
+    background-image:url(images/imgGrp.svg);
+}
+
+.siedbar a:hover::before,
+.siedbar a.active::before{
+    opacity: 1;
+}
+
+
+.headerCard.cardhedAvatar{
+    padding-left: 68px;
+    padding-right: 2px;
+}
+
+.cardAvatar{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+   transform: translateY(-50%);
+    left:10px;
+}
+
+.card{
+    border: solid 1px #dbdbdb ;
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    
+}
+    
+.card:last-child{
+    margin-bottom: 0px;
+}
+
+
+.headerCard{
+    padding: 10px;
+    position: relative;
+   
+}
+.cardTitle{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #000;
+    margin-bottom: 5px ;
+   
+}
+
+ .cardDate {
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+    color:rgba(0,0,0, 0.38);
+ }
+
+.cardBody{
+    padding: 0 10px  20px  10px;
+}
+
+.cardBody .cardImg{
+    width: calc(100% + 20px);
+     margin-left: -10px;
+     margin-right: -10px;
+     display: block;
+ }
+
+.cardBody p:first-child{
+    margin-top: 0;
+}
+.cardBody p:last-child{
+    margin-top: 0;
+}
+ .headerCard .cardLike::before{
+    background-image: url(images/Vector.svg);
+    
+}
+.headerCard .carComment::before{
+    background-image: url(images/comment.svg);
+}
+.cardComment{
+    text-align: right;
+    margin-right: 10px;
+    margin:10px;
+}
+.cardLike{
+    text-align: left;
+    margin-right: 10px;
+    margin:10px;
+    margin-bottom: 0px;
+}
+.cardFooter{
+    border-top: solide 1px #dbdbdb;
+    background: #fbfbfb;
+    display: flex;
+    padding: 0px  10px ;
+    font-size: 12px;
+    color: #dbdbdb;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.cardFooter a {
+    text-decoration: none;
+}
+.cardFooter a:hover{
+    text-decoration: #000;
+}
+ 
+.cardLike::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 20px;
+    height: 18px;
+    background: url(images/Ei-like.svg) center center /20px 18px no-repeat ;
+
+}
+.cardComment::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 20px;
+    height: 18px;
+    background: url(images/comment.svg) center center / 20px 18px no-repeat;
+}
+.asidTitle{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+
+.asidTitle::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    margin-top: 4px;
+    background: #000;
+}
+.amis{
+    margin: 14px;
+    display: flex;
+}
+.amiAvatar{
+    width: 75px;
+    height: 73px;
+    flex: none;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+.amiNom{
+    display: block;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+   
+}
+.amiAdd{
+    font-size: 12px;
+    color:#000;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+ .amiAdd::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    transform: translateY(-1.5px);
+    background:  center center / 18px 13px no-repeat url(images/addAmi.svg) ;
+    vertical-align: middle;
+    margin-right: 5px;
+ }
+
+a.amiAdd{
+    text-decoration: none ;
+}
+.amiBody{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.amiConnect{
+    color: rgba(0,0,0,0.38);
+    font-size: 12px;
+}
+
+@media  only screen and  (min-width: 520px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        height: 64px;
+        padding: 0 25px ;
+    }
+
+    .logoh, 
+    .headerNav{
+        padding: 0px;
+    }
+
+    .headerNav a {
+        margin: 0 20px;
+    }
+ }
+
+ @media only screen and (min-width:950px){
+    .site {
+     display: flex;
+    } 
+    .profil{
+        display: block;
+    }
+    .siedbar{
+     display: block;
+     flex: none;
+     width: 180px;
+    }
+    .siedbar a{
+     width: 100%;
+    }
+    .main {
+     width: 100%;
+     margin-left: 30px;
+     margin-right: 30px;
+    }
+    .aside{
+     flex:none;
+     width: 310px;
+    }
+ }
+ 
